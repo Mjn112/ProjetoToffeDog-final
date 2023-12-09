@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="link" rel="stylesheet" href="./Style_Home.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="./Index.html"> 
+            <h1><span class="span">Toffe</span>Dog</h1>
+            <p>Petshop</p>
+        </a>
+        <input type="text" class="pesquisa" placeholder="O que está procurando?">
+        <nav class="container_linguagens">
+            <a class="link_linguagen" href="./Index.html"><img class="img_linguagen" src="./Img/BandeiraBrasil.svg" alt=""><p class="texto_linguagen">Português</p></a>
+            <a class="link_linguagen" href="./Home_IG.html"><img class="img_linguagen" src="./Img/BandeiraEUA.svg" alt=""><p class="texto_linguagen">Inglês</p></a>
+            <a class="link_linguagen" href="./Home_ESP.html"><img class="img_linguagen" src="./Img/Espanha.svg" alt=""><p class="texto_linguagen">Espanhol</p></a>
+        </nav>
+        <nav class="menu_header">
+            <a class="Link_menu_header" href="./Erro.html"><img class="icon" src="./Img/Heart.png" alt=""><p class="texto_menu_header">Favoritos</p></a>
+            <a class="Link_menu_header" href="./Erro.html"><img class="icon" src="./Img/Bag.png" alt=""><p class="texto_menu_header">Sacola</p></a>
+            <a class="Link_menu_header" href="./Login.html"><img class="icon" src="./Img/User.png" alt=""><p class="texto_menu_header">Login</p></a>
+        </nav>
+      </header>
+      <main>
+        <div id="trilha_de_migalhas">
+            <ul id="Trilha">
+                <li class="migalhas"><a href="./Home.html">Home</a></li>
+            </ul>
+          </div>
+          <div class="acessibilidade" id="acessibilidade">
+            <button class="botao_aumentarFonte" id="botao_aumentarFonte">
+                +A
+            </button>
+            <button class="botao_diminuirFonte" id="botao_diminuirFonte">
+                -A
+            </button>
+            <button id="com_contraste" class="modo_contraste">
+                <img class="Contraste" src="./Img/circle-half-stroke-solid.svg" alt="">
+                Com Contraste
+            </button>
+            <button id="sem_contraste" class="modo_contraste">
+                <img class="Contraste" src="./Img/circle-half-stroke-solid.svg" alt="">
+                Sem Contraste
+            </button>
+            <button class="btn_acessibiledade" id="btn_acessibiledade"><img class="seta" id="seta" src="./Img/right-arrow-next-svgrepo-com.svg" alt=""></button>
+            <button class="Duvidas" id="btn_chat"><img id="img_chat" class="Duvidas" src="./Img/Duvida-removebg-preview.png" alt=""></button>
+        </div>
+        <div class="popup" id="popup">
+            <h1 class="titulo_chat"> Duvidas, Reclamções ou sugestões? <br> Fala para gente</h1>
+            <p class="textp_chat">Seu Nome</p>
+            <input class="identivicação" id="identivicação" type="text" placeholder="nome">
+            <p class="textp_chat">Seu Comentário</p>
+            <textarea name="area_de_comentarios" class="comentario" id="comentario" cols="50" rows="10"></textarea>
+            <div class="container_btn_chat"><button class="btn_chat_enviar">Enviar</button></div>
+            <button class="btn_X" id="btn_X">X</button>
+        </div>
+        <nav class="container_menu_Principal">
+            <div class="box">
+                <a class="link_menu_Principal" href="./Raçao.html">Ração</a>
+            </div>
+            <div class="box">
+                <a class="link_menu_Principal" href="./Medicina.html">Farmácia</a>
+            </div>
+            <div class="box">
+                <a class="link_menu_Principal" href="./Erro.html">Higiene</a>
+            </div>
+            <div class="box">
+                <a class="link_menu_Principal" href="./Erro.html">Acessórios</a>
+            </div>
+            <div class="box">
+                <a class="link_menu_Principal" href="./Erro.html">Serviços</a>
+            </div>
+        </nav>  
+        <div class="container_slider">
+            <button id="prev_button">◀</button>
+            <div class="container_galeria">
+                <a href="./Raçao.html"><div class="slider on banner1"><img class="cao_e_osso" src="./Img/cao_e_osso.png" alt=""><h1 class="titulo_banner">Promoção</h1><p class="texto_banner1"> toda loja com até <span>80% de desconto</span></p> <p class="texto_banner2">clique aqui e saiba mais</p> <img class="pegadas p1" src="./Img/PegadasFora.png" alt=""></div></a>
+                <a href="./Raçao.html"><div class="slider banner2"><img class="cao_e_osso" src="./Img/caolirio_osso.png" alt=""><h1 class="titulo_banner t1">Farmácia</h1><p class="texto_banner1 v2"> Os melhores descontos para seus pets viverem com saúde 🐾 </p> <p class="texto_banner2">clique aqui e saiba mais</p> <img class="pegadas p2" src="./Img/pegadaCinza.png" alt=""></div></a>
+                <a href="./Raçao.html"><div class="slider banner3 "><img class="cao_e_osso" src="./Img/gato_osso.png" alt=""><h1 class="titulo_banner">Promoção</h1><p class="texto_banner1"> Petiscos para gatos</p> <p class="texto_banner2">clique aqui e saiba mais</p> <img class="pegadas p3" src="./Img/pegadaCinza.png" alt=""></div></a>
+                <a href="./Raçao.html"><div class="slider banner4"><img class="cao_e_osso" src="./Img/petcasa.png" alt=""><h1 class="titulo_banner t2">Toffe House</h1><p class="texto_banner1 v3"> 🐾 Bem-Vindo ao Toffee House - Sua Creche Canina Aconchegante! 🐾  </p><p class="texto_banner3">Seu amigão merece mais do que apenas um lugar para ficar. No Toffee House, proporcionamos uma experiência única para o seu peludo! Somos mais do que uma creche para cachorros, somos o lar temporário que seu amigo de quatro patas sempre sonhou.</p> <p class="texto_banner2">clique aqui e saiba mais</p> <img class="pegadas p4" src="./Img/PegadasFora.png" alt=""></div></a>
+                <!-- <a href="./Medicina.html"><img src="./img/Home2.png" class=" slider" alt=""></a>
+                <a href="./Raçao.html"><img src="./img/Home3.png" class=" slider" alt=""></a>
+                <a href="./Erro.html"><img src="./img/19.png" class=" slider" alt=""></a> -->
+            </div>
+            <button id="next_button">▶</button>
+        </div>
+        <section class="container_produtos">
+            <h1 class="P_titulo">Produtos Recomendados</h1>
+            <div class="container_slider_2">
+                <button class="arrow_left control">◀</button>
+                <button class="arrow_right control">▶</button>
+                <div class="galeria_wrapper_2">
+                    <div class="galeria_2">
+                        <a href="" class="item current_item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="produto">
+                            <img class="imagem_produto" src="./Img/ExemploProduto.png" alt="">
+                            <p class="P_texto_1">Ração Magnus Todo Dia-15 Kg</p>
+                            <p class="P_texto_2">Preço:R$ 113,39</p>
+                            <p class="P_texto_3">4.6 <img class="Avaliação" src="./Img/Estrela.png" alt=""></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container_marcas">
+            <h1 class="titulo_marcas">Trabalhamos com essas marcas</h1>
+            <figure class="galeria_marcas">
+                <img class="img1 img0" src="./Img/imagem-marca-pedigree-pedigree.jpg" alt="">
+                <img class="img0" src="./Img/imagem-marca-supersecao-super_secao.jpg" alt="" >
+                <img class="img0" src="./Img/imagem-marca-whiskas-whiskas.jpg" alt="">
+                <img class="img0" src="./Img/zeedog.jpg" alt="">
+                <img class="img0" src="./Img/nd.jpg" alt="">
+                <img class="img0" src="./Img/imagem-marca-frontline-frontiline_plus.jpg" alt="">
+                <img class="img0" src="./Img/imagem-marca-pet-society-pet_society.jpg" alt="">
+                <img class="img0" src="./Img/imagem-marca-purina-purina.jpg" alt="">
+                <img class="img0" src="./Img/imagem-marca-ferplast-ferplast.jpg" alt="">
+            </figure>
+        </section>
+       <div class="bannerBaixo">
+        <h1 class="titulo_bannerBaixo">🐾 Toffe Uber: O Transporte Premium para Seu Melhor Amigo Peludo! 🚗</h1>
+        <img class="velo" src="./Img/velocity.png" alt="">
+        <p class="texto_bannerBaixo">Reserve agora e descubra por que o Toffe Uber é a escolha número um para transportar cães com segurança, conforto e estilo! 🎉🚗✨</p>
+       </div> 
+      </main>
+      <aside>
+        <section class="container_buscas">
+            <h3 class="titulo_busca">Mais Buscados</h3>
+            <div class="container_lista_busca">
+                <ul>
+                    <li>Pet Shop</li>
+                    <li>Advocate</li>
+                    <li>Royal Canin Gatos</li>
+                    <li>Ração Golden</li>
+                    <li>Glicopan Pet</li>
+                    <li>Casinha de Cachorro</li>
+                </ul>
+                <ul>
+                    <li>Ração para Cachorro</li>
+                    <li>Arranhador para Gatos</li>
+                    <li>Aquários</li>
+                    <li>Cama para Cachorro</li>
+                    <li>Frontline</li>
+                    <li>Royal Canin</li>
+                </ul>
+                <ul>
+                    <li>Bayer Pet</li>
+                    <li>Pedigree</li>
+                    <li>Ração Premier</li>
+                    <li>Baytril</li>
+                    <li>Advantage</li>
+                    <li>Seresto</li>
+                </ul>
+                <ul>
+                    <li>Frontline Plus</li>
+                    <li>Nexgard</li>
+                    <li>Coleira</li>
+                    <li>Whiskas</li>
+                    <li>Capstar</li>
+                    <li>Hamster</li>
+                </ul>
+                <ul>
+                    <li>Gaiola</li>
+                    <li>Brinquedos para gatos</li>
+                    <li>Máquina de Tosa para Cachorros</li>
+                    <li>Cachorros</li>
+                    <li>Drontal</li>
+                    <li>Ração Hills</li>
+                </ul>
+                <ul>
+                    <li>Portão para Cachorro</li>
+                    <li>Proplan</li>
+                    <li>Erva do Gato</li>
+                    <li>Royal Canin Filhotes</li>
+                    <li>Black Friday Pet</li>
+                </ul>
+            </div>
+        </section>
+      </aside>
+      <footer>
+        <p class="texto_atendimento"> Atendimento <br><br> Central de atendimento <br><br> +XX XX XXXXX-XXXX </p>
+        <div class="formas_de_pagamaento">
+            <p class="texto_pagamento">Formas de Pagamento</p>
+            <img class="pagamento" src="./Img/barcode-svgrepo-com.svg" alt="">
+            <img class="pagamento" src="./Img/visa-svgrepo-com.svg" alt="">
+            <img class="pagamento" src="./Img/amex-svgrepo-com.svg" alt="">
+            <img class="pagamento" src="./Img/diners-svgrepo-com.svg" alt="">
+            <img class="pagamento" src="./Img/elo-svgrepo-com.svg" alt="">
+            <img class="pagamento" src="./Img/hipercard-3-svgrepo-com.svg" alt="">
+            <img class="pagamento" src="./Img/mastercard-full-svgrepo-com.svg" alt="">
+            <img class="pagamento" src="./Img/pix-106.svg" alt="">
+            <img class="pagamento" src="./Img/nupay.png" alt="">
+        </div>
+        <div class="nossa_redes">
+            <p class="texto_nossas_redes"> Redes Sociais</p>
+            <ul class="lista_redes">
+                <li class="item_redes"> <a href="./Erro.html"><img class="nosso_rede" src="./Img/FacebookLogo.png" alt=""></a></li>
+                <li class="item_redes"> <a href="./Erro.html"><img class="nosso_rede" src="./Img/whatsappLogo.png" alt=""></a></li>
+                <li class="item_redes"> <a href="./Erro.html"><img class="nosso_rede" src="./Img/XLogo.png" alt=""></a></li>
+                <li class="item_redes"> <a href="./Erro.html"><img class="nosso_rede" src="./Img/InstagramLogo.png" alt=""></a></li>
+            </ul>
+            
+            <div class="texto_rodape_final">
+                <p class=" texto_quer">Quer receber</p>
+                <p class=" texto_novidades">Novidades</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./Script_Home.js"></script>
+</body>
+</html>
