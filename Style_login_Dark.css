@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 body {
   margin: 0px;
   padding: 0px;
@@ -9,6 +10,7 @@ body {
   font-size: 16px;
   font-family: "Lato", sans-serif;
 }
+
 header {
   background-color: black;
   border-bottom: solid white;
@@ -18,6 +20,7 @@ header {
   align-items: center;
   padding: 0px 20px 0px 20px;
 }
+
 .logo {
   /* background-color: #d69a3a; */
   height: 80px;
@@ -32,9 +35,11 @@ header {
   font-family: "Courgette";
   font-size: 1.5em;
 }
+
 .span {
   color: darkgoldenrod;
 }
+
 .pesquisa {
   width: 600px;
   height: 40px;
@@ -46,6 +51,7 @@ header {
   border-radius: 20px;
   border: none;
 }
+
 .menu_header {
   display: flex;
   gap: 40px;
@@ -53,6 +59,7 @@ header {
   align-content: center;
   margin-top: -30px;
 }
+
 .Link_menu_header {
   text-decoration: none;
   padding: 15px;
@@ -62,42 +69,52 @@ header {
   height: 50px;
   color: white;
 }
+
 .texto_menu_header {
   text-align: center;
   opacity: 0;
 }
+
 .Link_menu_header:hover p {
   opacity: 1;
 }
+
 .icon {
   width: 60px;
   height: 60px;
 }
+
 .container_linguagens {
   display: flex;
   gap: 40px;
   justify-content: space-between;
 }
+
 .texto_linguagen {
   font-size: 1.3em;
   text-decoration: none;
   opacity: 0;
   text-align: center;
 }
+
 .link_linguagen {
   text-decoration: none;
   color: white;
 }
+
 .link_linguagen:hover p {
   opacity: 1;
 }
+
 .img_linguagen {
   width: 80px;
   height: 80px;
 }
+
 .lista_menu_header {
   list-style: none;
 }
+
 .lista_menu_header_item {
   display: inline;
 }
@@ -107,26 +124,32 @@ main {
   grid-template-columns: 1fr 5fr 5fr 1fr;
   row-gap: 20px;
 }
+
 #trilha_de_migalhas {
   margin: 10px 10px 10px 10px;
   grid-row: 1/2;
   grid-column: 1/3;
 }
+
 #trilha {
   margin: 0px 0px 0px 10px;
 }
+
 .migalhas {
   display: inline;
   color: #0000ff;
 }
+
 .migalhas a {
   text-decoration: none;
   color: #0000ff;
   font-size: 1.25em;
 }
+
 .migalhas a:hover {
   text-decoration: underline;
 }
+
 .acessibilidade {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -142,9 +165,11 @@ main {
   border-radius: 10px;
   margin: 10px;
 }
+
 .hiden {
   left: 0px;
 }
+
 .botao_aumentarFonte {
   grid-column: 1/2;
   justify-self: center;
@@ -152,6 +177,7 @@ main {
   height: 40px;
   margin: 10px 10px 10px 10px;
 }
+
 .botao_diminuirFonte {
   grid-column: 1/2;
   justify-self: center;
@@ -159,6 +185,7 @@ main {
   height: 40px;
   margin: 10px 10px 10px 10px;
 }
+
 .modo_contraste {
   grid-column: 1/2;
   margin: 10px 10px 10px 10px;
@@ -166,10 +193,12 @@ main {
   height: 42px;
   justify-self: center;
 }
+
 .modo_contraste img {
   width: 20px;
   height: 20px;
 }
+
 .btn_acessibiledade {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -181,16 +210,20 @@ main {
   border: solid white;
   border-radius: 10px;
 }
+
 .seta {
   width: 20px;
   height: 20px;
 }
+
 .vira {
   transform: rotate(180deg);
 }
+
 .btn_acessibiledade:hover {
   background-color: gray;
 }
+
 .Duvidas {
   grid-column: 2/3;
   grid-row: 3/4;
@@ -201,6 +234,7 @@ main {
   border: none;
   cursor: pointer;
 }
+
 .popup {
   display: none;
   flex-direction: column;
@@ -218,17 +252,20 @@ main {
   top: 22%;
   box-shadow: 0 0 1em;
 }
+
 .titulo_chat {
   font-size: 2em;
   text-align: center;
   color: white;
 }
+
 .textp_chat {
   font-size: 1.5em;
   text-align: left;
   width: 680px;
   color: white;
 }
+
 .identivicação {
   font-size: 1.5em;
   width: 680px;
@@ -238,6 +275,7 @@ main {
   border: none;
   padding: 10px;
 }
+
 .comentario {
   font-size: 1.5em;
   width: 680px;
@@ -245,12 +283,14 @@ main {
   padding: 10px;
   margin: 10px 0px 10px 0px;
 }
+
 .container_btn_chat {
   width: 100%;
   display: flex;
   justify-content: left;
   padding-left: 15%;
 }
+
 .btn_chat_enviar {
   font-size: 1em;
   font-weight: bold;
@@ -261,11 +301,13 @@ main {
   background-color: black;
   color: white;
 }
+
 .btn_chat_enviar:active {
   background-color: white;
   border: solid black;
   color: black;
 }
+
 .btn_X {
   font-size: 2em;
   font-weight: bold;
@@ -280,9 +322,11 @@ main {
   right: -390px;
   bottom: 480px;
 }
+
 .btn_X:active {
   color: black;
 }
+
 .container_login {
   grid-row: 2/3;
   grid-column: 2/4;
@@ -295,6 +339,7 @@ main {
   border: solid white;
   margin: 10px 50px 60px 10px;
 }
+
 .titulo_acesse {
   grid-column: 1/3;
   justify-self: center;
@@ -303,6 +348,7 @@ main {
   align-self: center;
   color: white;
 }
+
 .texto_email {
   grid-column: 1/3;
   font-size: 1.5em;
@@ -310,6 +356,7 @@ main {
   align-self: center;
   color: white;
 }
+
 .input_email {
   grid-column: 1/3;
   margin: 10px;
@@ -319,12 +366,14 @@ main {
   border-radius: 8px;
   align-self: center;
 }
+
 .texto_senha {
   font-size: 1.5em;
   align-self: center;
   margin: 10px;
   color: white;
 }
+
 .texto_esqueci_a_Senha {
   justify-self: right;
   margin: 10px;
@@ -332,6 +381,7 @@ main {
   font-size: 1.5em;
   color: white;
 }
+
 .input_senha {
   grid-column: 1/3;
   margin: 10px;
@@ -341,6 +391,7 @@ main {
   border-radius: 8px;
   align-self: center;
 }
+
 .btn_entrar {
   grid-column: 1/3;
   justify-self: center;
@@ -354,6 +405,7 @@ main {
   background-color: black;
   border: solid white;
 }
+
 .btn_entrar:hover {
   background-color: gray;
   color: black;
@@ -368,22 +420,26 @@ main {
   font-size: 1.5em;
   color: white;
 }
+
 .acesso_com_google {
   grid-column: 1/3;
   grid-row: 8/9;
   justify-self: center;
   margin: 0px 10px 10px 10px;
 }
+
 .img_google {
   width: 40px;
   height: 40px;
 }
+
 .texto_não_tem_conta {
   grid-column: 1/3;
   justify-self: center;
   color: white;
   font-size: 1.5em;
 }
+
 .Criar_conta {
   grid-column: 1/3;
   justify-self: center;
@@ -397,10 +453,12 @@ main {
   border: solid white;
   background-color: black;
 }
+
 .Criar_conta:hover {
   background-color: gray;
   color: black;
 }
+
 footer {
   display: flex;
   border-width: 2px;
@@ -410,12 +468,14 @@ footer {
   font-family: "Lato", sans-serif;
   padding: 0px 20px 0px 20px;
 }
+
 .texto_atendimento {
   font-size: 2em;
   justify-self: center;
   align-self: center;
   color: white;
 }
+
 .texto_pagamento {
   font-size: 2em;
   justify-self: center;
@@ -423,11 +483,13 @@ footer {
   grid-row: 1/2;
   color: white;
 }
+
 .formas_de_pagamaento {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
 .pagamento {
   width: 80px;
   height: 60px;
@@ -435,9 +497,11 @@ footer {
   background-color: white;
   border-radius: 50%;
 }
+
 .nossa_redes {
   display: grid;
 }
+
 .texto_nossas_redes {
   background-color: black;
   border: solid white;
@@ -449,6 +513,7 @@ footer {
   padding: 5px 20px 5px 20px;
   margin-top: 10px;
 }
+
 .lista_redes {
   justify-self: center;
   align-self: center;
@@ -462,11 +527,13 @@ footer {
 .item_redes {
   display: inline;
 }
+
 .nosso_rede {
   width: 50px;
   height: 50px;
   margin: 25px 10px 0px 10px;
 }
+
 .texto_rodape_final {
   background-color: black;
   border: solid white;
@@ -479,16 +546,19 @@ footer {
   align-self: center;
   margin: 10px;
 }
+
 .texto_quer {
   justify-self: center;
   align-self: center;
   font-size: 1.8em;
 }
+
 .texto_novidades {
   justify-self: center;
   align-self: center;
   font-size: 1.8em;
 }
+
 @media (max-width: 1920px) {
   .formas_de_pagamaento {
     display: grid;
@@ -496,6 +566,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     width: 1080;
   }
+
   .pagamento {
     width: 80px;
     height: 60px;
@@ -503,6 +574,7 @@ footer {
     background-color: white;
     border-radius: 50%;
   }
+
   .texto_pagamento {
     font-size: 2em;
     justify-self: center;
@@ -511,21 +583,25 @@ footer {
     color: white;
   }
 }
+
 @media (max-width: 1500px) {
   header {
     flex-direction: column;
   }
+
   footer {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
+
   .formas_de_pagamaento {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 1080;
   }
+
   .pagamento {
     width: 80px;
     height: 60px;
@@ -533,6 +609,7 @@ footer {
     background-color: white;
     border-radius: 50%;
   }
+
   .texto_pagamento {
     font-size: 2em;
     justify-self: center;
@@ -541,6 +618,7 @@ footer {
     color: white;
   }
 }
+
 @media (max-width: 1000px) {
   .popup {
     display: none;
@@ -557,17 +635,20 @@ footer {
     top: 22%;
     box-shadow: 0 0 1em;
   }
+
   .titulo_chat {
     font-size: 1.5em;
     text-align: center;
     color: white;
   }
+
   .textp_chat {
     font-size: 1.3em;
     text-align: left;
     width: 100%;
     color: white;
   }
+
   .identivicação {
     font-size: 1.5em;
     width: 400px;
@@ -577,6 +658,7 @@ footer {
     border: none;
     padding: 10px;
   }
+
   .comentario {
     font-size: 1.5em;
     width: 400px;
@@ -584,12 +666,14 @@ footer {
     padding: 10px;
     margin: 10px 0px 10px 0px;
   }
+
   .container_btn_chat {
     width: 100%;
     display: flex;
     justify-content: left;
     padding-left: 15%;
   }
+
   .btn_chat_enviar {
     font-size: 1em;
     font-weight: bold;
@@ -597,6 +681,7 @@ footer {
     height: 200%;
     border-radius: 10px;
   }
+
   .btn_X {
     font-size: 1.5em;
     font-weight: bold;
@@ -608,16 +693,20 @@ footer {
     bottom: 470px;
   }
 }
+
 @media (max-width: 500px) {
   .pesquisa {
     width: 300px;
   }
+
   input {
     width: 350px;
   }
+
   .container_login {
     width: 400px;
   }
+
   .popup {
     display: none;
     flex-direction: column;
@@ -633,17 +722,20 @@ footer {
     top: 22%;
     box-shadow: 0 0 1em;
   }
+
   .titulo_chat {
     font-size: 1em;
     text-align: center;
     color: white;
   }
+
   .textp_chat {
     font-size: 1em;
     text-align: left;
     width: 100%;
     color: white;
   }
+
   .identivicação {
     font-size: 1.5em;
     width: 250px;
@@ -653,6 +745,7 @@ footer {
     border: none;
     padding: 10px;
   }
+
   .comentario {
     font-size: 1.5em;
     width: 250px;
@@ -660,12 +753,14 @@ footer {
     padding: 10px;
     margin: 10px 0px 10px 0px;
   }
+
   .container_btn_chat {
     width: 100%;
     display: flex;
     justify-content: left;
     padding-left: 15%;
   }
+
   .btn_chat_enviar {
     font-size: 1em;
     font-weight: bold;
@@ -673,6 +768,7 @@ footer {
     height: 200%;
     border-radius: 10px;
   }
+
   .btn_X {
     font-size: 1.5em;
     right: -120px;

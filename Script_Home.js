@@ -24,110 +24,110 @@ let currentSlider = 0;
 let currentItem = 0;
 
 function hidesleider() {
-slider.forEach(item => item.classList.remove('on'))
+    slider.forEach(item => item.classList.remove('on'))
 }
 
-function showSlider () {
+function showSlider() {
     slider[currentSlider].classList.add('on')
 }
 
-function nextSlider(){
+function nextSlider() {
     hidesleider()
-    if(currentSlider == slider.length - 1){
+    if (currentSlider == slider.length - 1) {
         currentSlider = 0
-    }else{
+    } else {
         currentSlider++
     }
     showSlider()
 }
 
-function prevSlider(){
+function prevSlider() {
     hidesleider()
-    if(currentSlider == 0){
+    if (currentSlider == 0) {
         currentSlider = slider.length - 1
-    }else{
+    } else {
         currentSlider--
     }
     showSlider()
 }
 
-function AddOn(){
+function AddOn() {
 
-    if(cont == 0){
+    if (cont == 0) {
         acessibilidade.classList.add('hiden');
         seta.classList.add('vira');
         cont++
-    }else{
+    } else {
         acessibilidade.classList.remove('hiden');
         seta.classList.remove('vira');
         cont--
     }
 }
 
-function aumentar(){
+function aumentar() {
     tamanho++;
-    document.body.style.fontSize=tamanho + 'px';
+    document.body.style.fontSize = tamanho + 'px';
 }
-function diminuir(){
-    
-    if(document.body.style.fontSize >= '16px' ){
+function diminuir() {
+
+    if (document.body.style.fontSize >= '16px') {
         tamanho--;
-        document.body.style.fontSize=tamanho + 'px';
+        document.body.style.fontSize = tamanho + 'px';
     }
 
 }
 
 control.forEach(control => {
-    control.addEventListener('click', () =>{
+    control.addEventListener('click', () => {
         const isleft = control.classList.contains('arrow_left');
 
-        if(isleft){
+        if (isleft) {
             currentItem -= 1;
-        }else {
+        } else {
             currentItem += 1;
         }
 
-        if(currentItem >= maxItem){
+        if (currentItem >= maxItem) {
             currentItem = 0;
         }
-        if(currentItem < 0){
+        if (currentItem < 0) {
             currentItem = maxItem - 1;
         }
         item.forEach(item => item.classList.remove('current_item'));
 
-        item[currentItem].scrollIntoView({ inline:"center", behavior: "smooth", block: "nearest"    });
+        item[currentItem].scrollIntoView({ inline: "center", behavior: "smooth", block: "nearest" });
         item[currentItem].classList.add("current_item");
         console.log("control clicked", isleft), currentItem;
     })
 });
 
-function com_contraste(){
+function com_contraste() {
 
-        link.setAttribute('href', './Style_Home_Dark.css')
-        img_chat.setAttribute('src' , './Img/Duvida-removebg-previewB.png')
+    link.setAttribute('href', './Style_Home_Dark.css')
+    img_chat.setAttribute('src', './Img/Duvida-removebg-previewB.png')
 }
-function sem_contraste(){
-        link.setAttribute('href', './Style_Home.css')
-        img_chat.setAttribute('src' , './Img/Duvida-removebg-preview.png')
+function sem_contraste() {
+    link.setAttribute('href', './Style_Home.css')
+    img_chat.setAttribute('src', './Img/Duvida-removebg-preview.png')
 }
 
-function abrir_chat(){
-    if(chat.style.display == 'flex'){
+function abrir_chat() {
+    if (chat.style.display == 'flex') {
         chat.style.display = 'none'
-    }else{
+    } else {
         chat.style.display = 'flex'
     }
 }
-function fechar_chat(){
+function fechar_chat() {
     chat.style.display = 'none'
 }
 
-btn_com_contraste.addEventListener('click' , com_contraste)
-btn_sem_contraste.addEventListener('click' , sem_contraste)
-btnNext.addEventListener('click' , nextSlider)
-btnPrev.addEventListener('click' , prevSlider)
-btn_FontA.addEventListener('click' , aumentar)
-btn_FontD.addEventListener('click' , diminuir)
-btn_On.addEventListener('click' , AddOn)
+btn_com_contraste.addEventListener('click', com_contraste)
+btn_sem_contraste.addEventListener('click', sem_contraste)
+btnNext.addEventListener('click', nextSlider)
+btnPrev.addEventListener('click', prevSlider)
+btn_FontA.addEventListener('click', aumentar)
+btn_FontD.addEventListener('click', diminuir)
+btn_On.addEventListener('click', AddOn)
 btn_chat.addEventListener('click', abrir_chat)
 btn_X.addEventListener('click', fechar_chat)

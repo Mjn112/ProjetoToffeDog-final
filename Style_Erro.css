@@ -1,26 +1,31 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-size: 16px;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: grid;
 }
-figure{
+
+figure {
     justify-self: center;
     align-self: center;
     display: grid;
 }
-img{
+
+img {
     justify-self: center;
     align-self: center;
 }
-h1{
+
+h1 {
     justify-self: center;
     font-size: 5em;
 }
-p{
+
+p {
     font-size: 2em;
     justify-self: center;
     margin: 20px;
@@ -30,7 +35,8 @@ p{
     align-items: center;
     gap: 20px;
 }
-a{
+
+a {
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 3em;
@@ -38,7 +44,8 @@ a{
     align-self: center;
     color: black;
 }
-a:hover{
+
+a:hover {
     color: blue;
     text-decoration: underline;
 }

@@ -16,56 +16,56 @@ const btn_X = document.getElementById('btn_X');
 let cont = 0;
 let tamanho = 16;
 
-function AddOn(){
+function AddOn() {
 
-    if(cont == 0){
+    if (cont == 0) {
         acessibilidade.classList.add('hiden');
         seta.classList.add('vira');
         cont++
-    }else{
+    } else {
         acessibilidade.classList.remove('hiden');
         seta.classList.remove('vira');
         cont--
     }
 }
 
-function aumentar(){
+function aumentar() {
     tamanho++;
-    document.body.style.fontSize=tamanho + 'px';
+    document.body.style.fontSize = tamanho + 'px';
 }
-function diminuir(){
-    
-    if(document.body.style.fontSize >= '16px' ){
+function diminuir() {
+
+    if (document.body.style.fontSize >= '16px') {
         tamanho--;
-        document.body.style.fontSize=tamanho + 'px';
+        document.body.style.fontSize = tamanho + 'px';
     }
 
 }
 
-function com_contraste(){
+function com_contraste() {
 
     link.setAttribute('href', './Style_Medicina_Dark.css')
-    img_chat.setAttribute('src' , './Img/Duvida-removebg-previewB.png')
+    img_chat.setAttribute('src', './Img/Duvida-removebg-previewB.png')
 }
-function sem_contraste(){
+function sem_contraste() {
     link.setAttribute('href', './Style_Medicina.css')
-    img_chat.setAttribute('src' , './Img/Duvida-removebg-preview.png')
+    img_chat.setAttribute('src', './Img/Duvida-removebg-preview.png')
 }
-function abrir_chat(){
-    if(chat.style.display == 'flex'){
+function abrir_chat() {
+    if (chat.style.display == 'flex') {
         chat.style.display = 'none'
-    }else{
+    } else {
         chat.style.display = 'flex'
     }
 }
-function fechar_chat(){
+function fechar_chat() {
     chat.style.display = 'none'
 }
 
-btn_com_contraste.addEventListener('click' , com_contraste)
-btn_sem_contraste.addEventListener('click' , sem_contraste)
-btn_FontA.addEventListener('click' , aumentar)
-btn_FontD.addEventListener('click' , diminuir)
-btn_On.addEventListener('click' , AddOn)
+btn_com_contraste.addEventListener('click', com_contraste)
+btn_sem_contraste.addEventListener('click', sem_contraste)
+btn_FontA.addEventListener('click', aumentar)
+btn_FontD.addEventListener('click', diminuir)
+btn_On.addEventListener('click', AddOn)
 btn_chat.addEventListener('click', abrir_chat)
 btn_X.addEventListener('click', fechar_chat)
